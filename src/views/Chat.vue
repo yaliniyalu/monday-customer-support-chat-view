@@ -202,7 +202,7 @@ export default {
             }
         },
         refresh() {
-            this.$store.dispatch("chat/syncMessages");
+            this.$store.dispatch("chat/syncMessages", { chatId: this.chatId, customer: this.customer.id });
         }
     },
 
